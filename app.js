@@ -513,4 +513,12 @@ const wordsDB = [
    * 11) Démarrage
    ***************************************************/
   document.addEventListener("DOMContentLoaded", startNewSeries);
+
+  /***************************************************
+   * 12) Ajoutez ceci pour gérer le formulaire
+   ***************************************************/
+  document.getElementById("answerForm").addEventListener("submit", (e) => {
+    e.preventDefault(); // Empêche le rechargement de la page
+    validateAnswer();
+  });
   
