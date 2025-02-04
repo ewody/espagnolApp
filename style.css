@@ -1,0 +1,199 @@
+/* Réinitialisation et styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+  }
+  
+  header,
+  footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  main {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Statistiques */
+  .stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .stat-item {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .stat-item span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4facfe;
+  }
+  
+  .stat-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Carte de jeu */
+  .game-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .word-display {
+    margin-bottom: 20px;
+  }
+  
+  #promptLabel {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  #currentWord {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4facfe;
+  }
+  
+  /* Zone d'input et bouton */
+  .input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #userAnswer {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    width: 60%;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  #userAnswer:focus {
+    border-color: #4facfe;
+  }
+  
+  #validateBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #4facfe;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #validateBtn:hover {
+    background-color: #3a8cd8;
+  }
+  
+  #feedback {
+    font-size: 1.1rem;
+    height: 1.5em;
+    margin-top: 10px;
+  }
+  
+  /* Animation pour le feedback */
+  .fade {
+    animation: fadeEffect 0.6s;
+  }
+  
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Contrôles */
+  .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #newSeriesBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #4facfe;
+    background: transparent;
+    color: #4facfe;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #newSeriesBtn:hover {
+    background-color: #4facfe;
+    color: #fff;
+  }
+  
+  /* Historique */
+  .history-container {
+    margin-top: 20px;
+  }
+  
+  .history-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4facfe;
+  }
+  
+  .history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .history-grid p {
+    background: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  

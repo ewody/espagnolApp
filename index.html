@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vocabulaire Espagnol – Appli Style Duolingo</title>
+    <!-- Utilisation d'une police moderne -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Vocabulaire Espagnol</h1>
+      </header>
+      <main>
+        <!-- Section des statistiques -->
+        <div class="stats">
+          <div class="stat-item">
+            <span id="correctCount">0</span>
+            <p>Correct</p>
+          </div>
+          <div class="stat-item">
+            <span id="wrongCount">0</span>
+            <p>Incorrect</p>
+          </div>
+        </div>
+        <!-- Carte de jeu -->
+        <div class="game-card">
+          <div class="word-display">
+            <p id="promptLabel">Traduisez :</p>
+            <p id="currentWord">...</p>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="userAnswer"
+              placeholder="Votre réponse..."
+              autocomplete="off"
+            />
+            <button id="validateBtn">Valider</button>
+          </div>
+          <p id="feedback"></p>
+        </div>
+        <!-- Contrôles -->
+        <div class="controls">
+          <button id="newSeriesBtn">Nouvelle Série</button>
+          <p>Série de <span id="totalWords">50</span> mots</p>
+        </div>
+        <!-- Historique des réponses -->
+        <div class="history-container">
+          <h2>Historique</h2>
+          <div id="history" class="history-grid">
+            <!-- Les réponses validées s'afficheront ici -->
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>Total mots dans la base : <span id="dbWordCount">0</span></p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
